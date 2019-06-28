@@ -2,6 +2,8 @@
 layout: post
 title: "Input Variable Records"
 date: 2019-06-25
+tags:
+    - "HGCAL"
 ---
 
 # The Input Variable is true(no peak) or false(has peak)

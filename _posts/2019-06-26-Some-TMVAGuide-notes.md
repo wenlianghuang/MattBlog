@@ -2,6 +2,9 @@
 layout: post
 title: "Some TMVAGuide notes"
 date: 2019-06-26
+tags:
+    - "HGCAL"
+
 ---
 
 # Some note in the TMVAGuide Books

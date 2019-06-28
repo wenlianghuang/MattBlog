@@ -13,6 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: Liang's Blogs
 tagline:    '網站的程式日記'
 email: wenliangmatt@gmail.com 
@@ -21,6 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: '/MattBlog' # the subpath of your site, e.g. /blog
+#baseurl: '/MattBlog'
 url: 'https://wenlianghuang.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: MattBlog
@@ -32,6 +34,10 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 paginate:   5
+
+collections:
+    tag:
+        output: true
 
 
 
