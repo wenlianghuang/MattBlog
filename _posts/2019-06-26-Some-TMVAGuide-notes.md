@@ -4,12 +4,11 @@ title: "Some TMVAGuide notes"
 date: 2019-06-26
 tags:
     - "HGCAL"
-
 ---
 
 # Some note in the TMVAGuide Books
 ## MLP(Multilayer perceptron)
-ex: factory.BookMethod(dataloader, TMVA.Types.kMLP,'MLP','H    :!V:NeuronType=tanh:VarTransform=N:NCycles=600:Hid    denLayers=N-1,N+5:TestRate=8:UseRagulator')
+ex: factory.BookMethod(dataloader, TMVA.Types.kMLP,'MLP','H:!V:NeuronType=tanh:VarTransform=N:NCycles=600:HiddenLayers=N-1,N+5:TestRate=8:UseRagulator')
 
 | Options | Array | Default | Predefine Values | Description |
 | ------ | ------ | ------- | ------ | ------- |
