@@ -333,7 +333,7 @@ a.sidebar-nav-item:focus {
 
 .page-header {
     color: #fff;
-    background: #56687C url('../../images/cover.jpg') no-repeat 50%;
+    background: #56687C /*url('../../images/cover.jpg')*/ url('https://user-images.githubusercontent.com/13759047/60906244-4a3a0580-a2a9-11e9-84e7-574fe38d1fb8.jpg') no-repeat 50%;
     padding: 3rem;
     top: 20px;
     background-size: cover;
