@@ -355,30 +355,31 @@ a.sidebar-nav-item:focus {
 }
 
 /* Project-name,Header-link */
-.project-name,
-.project-name, a{
+.project-name{
+/*.project-name a{*/
     margin-top: 0;
     margin-bottom: 0.1rem;
     text-align: center;
 }
+
 .header-link {
     color: rgba(255,255,255,0.9);
     text-decoration: none;
     transition: 0.4s;
-    /*text-align: center;*/
-}
-.subheader-link,
-.subheader-link a {
-    color: rgba(100,200,40,0.9);
-    text-align: center;
 }
 
 .header-link:hover {
     text-shadow: 0 0 8px rgba(255,255,255,0.7);
     transition: 0.3s;
     text-decoration: none;
-    text-align: center;
 }
+
+.subheader-link,
+.subheader-link a {
+    color: rgba(100,200,40,0.9);
+    text-align: left;
+}
+
 
 
 /* Related posts */
