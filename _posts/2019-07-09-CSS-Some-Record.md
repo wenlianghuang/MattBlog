@@ -12,5 +12,5 @@ CSS其實是蠻複雜的，如果想要自己架出漂亮的網站，真的需�
 |------------|-------|----------|---------|
 |<center>cursor</center>|CSS2|<center>object.style.cursor=css txt|[cursor](https://www.w3schools.com/cssref/pr_class_cursor.asp)|
 |<center>padding</center>|CSS2||[padding](https://www.w3schools.com/css/css_padding.asp)|
-
+|<center>display</center>|CSS1|<center>object.style.display= "none" or "inline" or "block"...|[display](https://www.w3schools.com/cssref/pr_class_display.asp)|
 
