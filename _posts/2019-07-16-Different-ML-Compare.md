@@ -57,4 +57,4 @@ There are several Machine Learning mehtod below I try to disappear the peak of E
 
 <img src="https://user-images.githubusercontent.com/13759047/61274505-87892080-a7de-11e9-9a21-880ade3992c9.png" title="DNN_CPU" width="500px" height="400px">
 
-<a href="#target">Click here</a>
+<a href="https://wenlianghuang.github.io/MattBlog/2019/06/25/HGCAL-input-variable-records.html">refer to 0625 diary</a>
