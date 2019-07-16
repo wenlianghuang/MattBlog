@@ -1,0 +1,18 @@
+---
+layout: default
+title: RailsRecord
+---
+
+<div>Tags:<br><br>
+    <div class="tag" align="left" style="color:DodgerBlue">Rails Record</div></div>
+<div class="posts">
+    {% for post in site.tags.RailsRecord %}
+        <h4 class="post-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+            </a>
+        </h4>
+        <small class="post-date"> {{ post.date | date_to_string }}
+        </small>
+    {% endfor %}
+</div>

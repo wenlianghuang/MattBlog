@@ -9,30 +9,73 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+      <!-- 
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+      -->
+      <!-- 20190714 -->
+      
+      <div class="dropbtn">
+          
+          
+          <a id="myBtn" class="sidebar-nav-item">Basic</a>
+      <div id="myDropdown" class="dropdown-content">
+          <li><a class="sidebar-nav-item" href="{{ site.baseurl }}/">Home</a></li>
+          <li><a href="/MattBlog/about.html">About</a></li>
+      </div>          
+      </div>
 
+      <div class="dropbtn">
+          <a id="myBtn2" class="sidebar-nav-item">High Particle Diary</a>
+          <div id="myDropdown2" class="dropdown-content">
+              <li><a class="sidebar-nav-item" href="/MattBlog/tag/HGCAL">HGCAL</a>
+          </div>
+      </div>
+    
+    <script>
+        var btn = ["myBtn","myBtn2"];
+        var dropdown = ["myDropdown","myDropdown2"];
+        var myfunc = ["myFunction(this)","myFunction2(this)"];
+        document.getElementById("myBtn").onclick = function() {myFunction(this)};
+        document.getElementById("myBtn2").onclick = function(){myFunction2(this)};
+
+        
+        function myFunction(){
+            document.getElementById("myDropdown").classList.toggle("show");    
+        }
+        function myFunction2(){
+            document.getElementById("myDropdown2").classList.toggle("show");
+        }
+    </script>
+    
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
     {% endcomment %}
-
     {% assign pages_list = site.pages | sort:"url" %}
     {% for node in pages_list %}
       {% if node.title != null %}
         {% if node.layout == "page" %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="/MattBlog{{ node.url }}">{{ node.title }}</a>
+        <li><a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="/MattBlog{{ node.url }}">{{ node.title }}</a></li>
         {% endif %}
       {% endif %}
     {% endfor %}
+    <!-- High Energy Particle -->
+    <a class="sidebar-nav-item" href="/MattBlog/">High Energy Diary</a> 
+    <li><a class="sidebar-nav-item" href="/MattBlog/tag/HGCAL">HGCAL build tag</a></li>
+    <a class="sidebar-nav-item" href="/MattBlog/">Front-End Diary</a>
     
-    <a class="sidebar-nav-item" href="/MattBlog/tag/jekyll">jekyll build tag</a>
-    <a class="sidebar-nav-item" href="/MattBlog/tag/HGCAL">HGCAL build tag</a>
-    <a class="sidebar-nav-item" href="/MattBlog/tag/CSSRecord">CSS/JS Record build tag</a>
-    <!--
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    --!>
-    <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
+    <!-- Front End -->
+    <li><a class="sidebar-nav-item" href="/MattBlog/tag/jekyll">jekyll build tag</a></li>
+    <li><a class="sidebar-nav-item" href="/MattBlog/tag/CSSRecord">CSS/JS Record build tag</a></li>
+    
+    <!-- Ruby on Rails -->
+    <a class="sidebar-nav-item" href="/MattBlog/">Ruby on Rails</a>
+    <li><a class="sidebar-nav-item" href="/MattBlog/tag/RailsRecord">Rails Record build tag</a></li>
+    <li><a class="sidebar-nav-item" href="/MattBlog/tag/RubyRecord">Rugy Record build tag</a></li>
+
     <a class="sidebar-nav-item" href="https://github.com/{{ site.github_username }}">GitHub</a> 
+          </dt>
+      </dl>
   </nav>
 
   <div class="sidebar-item">
