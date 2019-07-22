@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   /*top: .8rem;
   left: 10rem;*/
+  overflow-x:scroll;
   display: block;
   padding: 5.5rem .75rem;
    

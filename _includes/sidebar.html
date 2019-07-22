@@ -17,36 +17,35 @@
       <div class="dropbtn">
           
           
-          <a id="myBtn" class="sidebar-nav-item">Basic</a>
-      <div id="myDropdown" class="dropdown-content">
+          <a id="BtnBasic" class="sidebar-nav-item">Basic</a>
+      <div id="DropdownBasic" class="dropdown-content">
           <li><a class="sidebar-nav-item" href="{{ site.baseurl }}/">Home</a></li>
-          <li><a href="/MattBlog/about.html">About</a></li>
+          <li><a class="sidebar-nav-item" href="/MattBlog/about.html">About</a></li>
       </div>          
       </div>
+      <script>
+          document.getElementById("BtnBasic").onclick = function(){myFucntion()};
+          function myFucntion(){
+              document.getElementById("DropdownBasic").classList.toggle("show");
+          }
+      </script>
 
+      <!-- High Energy Particle -->
       <div class="dropbtn">
-          <a id="myBtn2" class="sidebar-nav-item">High Particle Diary</a>
-          <div id="myDropdown2" class="dropdown-content">
+          <a id="BtnHGCAL" class="sidebar-nav-item">High Particle Diary</a>
+          <div id="DropdownHGCAL" class="dropdown-content">
               <li><a class="sidebar-nav-item" href="/MattBlog/tag/HGCAL">HGCAL</a>
           </div>
       </div>
     
     <script>
-        var btn = ["myBtn","myBtn2"];
-        var dropdown = ["myDropdown","myDropdown2"];
-        var myfunc = ["myFunction(this)","myFunction2(this)"];
-        document.getElementById("myBtn").onclick = function() {myFunction(this)};
-        document.getElementById("myBtn2").onclick = function(){myFunction2(this)};
-
-        
+        document.getElementById("BtnHGCAL").onclick = function(){myFunction()};
         function myFunction(){
-            document.getElementById("myDropdown").classList.toggle("show");    
-        }
-        function myFunction2(){
-            document.getElementById("myDropdown2").classList.toggle("show");
+            document.getElementById("DropdownHGCAL").classList.toggle("show");
         }
     </script>
     
+    <!--
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
@@ -59,19 +58,37 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-    <!-- High Energy Particle -->
-    <a class="sidebar-nav-item" href="/MattBlog/">High Energy Diary</a> 
-    <li><a class="sidebar-nav-item" href="/MattBlog/tag/HGCAL">HGCAL build tag</a></li>
-    <a class="sidebar-nav-item" href="/MattBlog/">Front-End Diary</a>
+    -->
     
     <!-- Front End -->
-    <li><a class="sidebar-nav-item" href="/MattBlog/tag/jekyll">jekyll build tag</a></li>
-    <li><a class="sidebar-nav-item" href="/MattBlog/tag/CSSRecord">CSS/JS Record build tag</a></li>
+    <div class="dropbtn">
+        <a id="BtnFrontEnd" class="sidebar-nav-item">Front-End Diary</a>
+        <div id="DropdownFrontEnd" class="dropdown-content">
+            <li><a class="sidebar-nav-item" href="/MattBlog/tag/jekyll">jekyll build tag</a></li>
+            <li><a class="sidebar-nav-item" href="/MattBlog/tag/CSSRecord">CSS/JS Record build tag</a></li>
+        </div>
+    </div>
     
+    <script>
+        document.getElementById("BtnFrontEnd").onclick = function(){ myFunction()};
+        function myFunction(){ 
+            document.getElementById("DropdownFrontEnd").classList.toggle("show");
+        }
+    </script>
+
     <!-- Ruby on Rails -->
-    <a class="sidebar-nav-item" href="/MattBlog/">Ruby on Rails</a>
-    <li><a class="sidebar-nav-item" href="/MattBlog/tag/RailsRecord">Rails Record build tag</a></li>
-    <li><a class="sidebar-nav-item" href="/MattBlog/tag/RubyRecord">Rugy Record build tag</a></li>
+    <div class="dropbtn">
+        <a id="BtnRoR" class="sidebar-nav-item">Ruby on Rails Diary</a>
+        <div id="DropdownRoR" class="dropdown-content">
+            <li><a class="sidebar-nav-item" href="/MattBlog/tag/RailsRecord">Ruby on Rails Record build tag</a></li>
+        </div>
+    </div>
+    <script>
+        document.getElementById("BtnRoR").onclick = function() {myFunction()};
+        function myFunction(){
+            document.getElementById("DropdownRoR").classList.toggle("show");
+        }
+    </script>
 
     <a class="sidebar-nav-item" href="https://github.com/{{ site.github_username }}">GitHub</a> 
           </dt>
