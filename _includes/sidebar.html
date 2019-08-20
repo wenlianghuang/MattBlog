@@ -24,10 +24,11 @@
       </div>          
       </div>
       <script>
-          document.getElementById("BtnBasic").onclick = function(){myFucntion()};
+          document.getElementById("BtnBasic").onclick = function(){document.getElementById("DropdownBasic").classList.toggle("show")};
+          /**
           function myFucntion(){
               document.getElementById("DropdownBasic").classList.toggle("show");
-          }
+          }**/
       </script>
 
       <!-- High Energy Particle -->
@@ -39,10 +40,12 @@
       </div>
     
     <script>
-        document.getElementById("BtnHGCAL").onclick = function(){myFunction()};
-        function myFunction(){
+        document.getElementById("BtnHGCAL").onclick = function(){document.getElementById("DropdownHGCAL").classList.toggle("show")};
+        /**function myFunctionHGCAL(){
             document.getElementById("DropdownHGCAL").classList.toggle("show");
-        }
+        function myFunction(){
+            document.getElementById("DropdownHGCAL").classList.toggle("show",true);
+        }**/
     </script>
     
     <!--
@@ -70,10 +73,12 @@
     </div>
     
     <script>
-        document.getElementById("BtnFrontEnd").onclick = function(){ myFunction()};
-        function myFunction(){ 
+        document.getElementById("BtnFrontEnd").onclick = function(){document.getElementById("DropdownFrontEnd").classList.toggle("show")};
+        
+        /**
+        function myFunctionFrontEnd(){ 
             document.getElementById("DropdownFrontEnd").classList.toggle("show");
-        }
+        }**/
     </script>
 
     <!-- Ruby on Rails -->
@@ -84,10 +89,12 @@
         </div>
     </div>
     <script>
-        document.getElementById("BtnRoR").onclick = function() {myFunction()};
+        document.getElementById("BtnRoR").onclick = function() {document.getElementById("DropdownRoR").classList.toggle("show")};
+        /**
         function myFunction(){
             document.getElementById("DropdownRoR").classList.toggle("show");
-        }
+        }**/
+
     </script>
 
     <a class="sidebar-nav-item" href="https://github.com/{{ site.github_username }}">GitHub</a> 
