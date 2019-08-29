@@ -31,4 +31,6 @@ tags:
 
 7.用git來add & commit，接著用"heroku create"來create new free website，最後再用git push heroku master來上傳heroku的github
 
+8.如果原先已經用database的sqlite3，但要改成postgresql，除了上述的username & password以外，還要把config/database的title "database:db/development.sqlite3"和 "database:db/test.sqlite3"改成"database:xxxx_development" 和 "database:xxxx_test"，<span style="color:#ff0000">方法就是再folder 下用rails db:create</span>。<a href="https://www.youtube.com/watch?v=bQC5izDzOgE" target="_blank">詳細內容請看相關影片</a>
 
+9.<span style="font-style:italic; color:#ff0000">未完成</span>: 在postgresql裡面，我增加兩個database(create role `<your role name>`)，但當我想要刪除其中一個database(drop role `<your name>`)，結果依然是兩個不同名稱的database，需要再花時間研究

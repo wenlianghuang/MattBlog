@@ -1,0 +1,18 @@
+---
+layout: default
+title: DiaryRecord
+---
+
+<div>Tags:<br><br>
+    <div class="tag" align="left" style="color:DodgerBlue">Diary Record</div><div><br>
+<div class="post">
+    {% for post in site.tag.DiaryRecord %}
+    <h4 class="post-title">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+        </a>
+    </h4>
+    <small class="post-date"> {{ post.date | date_to_string }}
+    </small>
+    {% endfor %}
+</div>

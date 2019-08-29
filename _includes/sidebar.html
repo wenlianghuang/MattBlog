@@ -15,16 +15,26 @@
       <!-- 20190714 -->
       
       <div class="dropbtn">
-          
-          
+      <!--
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+      </script>
+      -->    
           <a id="BtnBasic" class="sidebar-nav-item">Basic</a>
       <div id="DropdownBasic" class="dropdown-content">
           <li><a class="sidebar-nav-item" href="{{ site.baseurl }}/">Home</a></li>
           <li><a class="sidebar-nav-item" href="/MattBlog/about.html">About</a></li>
+          <li><a class="sidebar-nav-item" href="/MattBlog/tag/DiaryRecord">Diary</a></li>
       </div>          
       </div>
       <script>
-          document.getElementById("BtnBasic").onclick = function(){document.getElementById("DropdownBasic").classList.toggle("show")};
+          $(document).ready(function () {
+              $("#BtnBasic").click(function (e) { 
+                  e.preventDefault();
+                  $("#DropdownBasic").slideToggle();
+              });
+          });
+          /**document.getElementById("BtnBasic").onclick = function(){document.getElementById("DropdownBasic").classList.toggle("show")};**/
+          
           /**
           function myFucntion(){
               document.getElementById("DropdownBasic").classList.toggle("show");
@@ -40,7 +50,19 @@
       </div>
     
     <script>
-        document.getElementById("BtnHGCAL").onclick = function(){document.getElementById("DropdownHGCAL").classList.toggle("show")};
+        $(document).ready(function () {
+            $("#BtnHGCAL").click(function (e) { 
+                e.preventDefault();
+                $("#DropdownHGCAL").slideToggle();
+            });
+        });
+        /**$(function(){
+            $("#BtnHGCAL").click(function(){
+                $("#aaatest").slideToggle(0);
+            });
+        });**/
+        /**document.getElementById("BtnHGCAL").onclick = function(){
+            document.getElementById("DropdownHGCAL").classList.toggle("show")};**/
         /**function myFunctionHGCAL(){
             document.getElementById("DropdownHGCAL").classList.toggle("show");
         function myFunction(){
@@ -73,7 +95,15 @@
     </div>
     
     <script>
-        document.getElementById("BtnFrontEnd").onclick = function(){document.getElementById("DropdownFrontEnd").classList.toggle("show")};
+        $(document).ready(function () {
+            $("#BtnFrontEnd").click(function (e) { 
+                e.preventDefault();
+                $("#DropdownFrontEnd").slideToggle();
+            });
+        });
+        /**
+        document.getElementById("BtnFrontEnd").onclick = function(){
+            document.getElementById("DropdownFrontEnd").classList.toggle("show")};**/
         
         /**
         function myFunctionFrontEnd(){ 
@@ -89,7 +119,15 @@
         </div>
     </div>
     <script>
-        document.getElementById("BtnRoR").onclick = function() {document.getElementById("DropdownRoR").classList.toggle("show")};
+        $(document).ready(function () {
+            $("#BtnRoR").click(function (e) { 
+                e.preventDefault();
+                $("#DropdownRoR").slideToggle();
+            });
+        });
+        /**
+        document.getElementById("BtnRoR").onclick = function() {
+            document.getElementById("DropdownRoR").classList.toggle("show")};**/
         /**
         function myFunction(){
             document.getElementById("DropdownRoR").classList.toggle("show");
