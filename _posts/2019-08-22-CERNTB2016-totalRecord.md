@@ -27,7 +27,29 @@ electron monte carlo energy 20GeV, 32GeV, 70GeV,100GeV,125GeV,200GeV,250GeV，�
 
 
 接下來就要把14x14正方形的圖放入Convolution Neural Networks進行，因為在2016時我們預計產生的實驗型HGCAL有8個layer(Fig. 1)，
-當然之後會產生更多的layer，但現在我們就先利用目前的8layer來進行training。而有另外一件事執得注意，雖然在市面上最流行的neural network API是Keras 和 Tensorflow，
-但Tensorflow下要使用 CNN method，image最多只能用3 layer(RGB)來training，而Keras上並無限制。在要beam to HGCAL不管是monte carlo 或 data都是完整的 8 layer，所以決定使用Keras來做完整的training。
-但正如 Table 1.上所說，
+當然之後會產生更多的layer，但現在我們就先利用目前的8layer來進行training。而有另外一件事執得注意，雖然在市面上最流行的neural network API是<a href="https://keras.io" style="color:rgba(255,0,0,0.3)">Keras </a> 和 <a href="https://www.tensorflow.org" style="color:#ffce73">Tensorflow</a>，但Tensorflow下要使用 CNN method，image最多只能用3 layer(RGB)來training，而Keras上並無限制。
+在要beam to HGCAL不管是monte carlo 或 data都是完整的 8 layer，所以決定使用Keras來做完整的training。
 
+正如 Table 1.上所說，在Convolution Nerual NetWorks中進行training，
+試圖在正方形圖案下能夠輕鬆seperate兩種粒子，理論上在detecor of CMS裡，pion uses <a href="http://cms.web.cern.ch/news/hadron-calorimeter" style="color:#ff0000;font-weight:bold">HCAL</a> with its measuring the energy of particle，electron uses <a href="http://cms.web.cern.ch/news/electromagnetic-calorimeter" style="color:#ff0000;font-weight:bold">ECAL</a>，我們預期將electron視為background，pion視為signal，可是在2016年CMS pion只建立Monte Carlo 125GeV，而在experiment中也僅test beam data of 150GeV，所以我用相對的electron Monte Carlo 125GeV來和125GeV的pion進行模擬test beam in HGCAL with CNN training.
+
+>
+<span style="font-style:italic;color:rgb(219,112,147)">注意1：在training2016的data和monte carlor ，在server中，
+<br><br>
+python implementated file in folder: <br>
+<span style="font-weight:bold;text-decoration:underline">python/tmp_keras_for_HGCAL_CNN_number.py
+<br>python/tmp_keras_for_HGCAL_MLP_number.py
+<br>對照:CERNT2018/python/tmp_keras_for_HGCAL_CNN_number.py
+</span>
+<br><br>
+training output plot folder:<br>
+<span style="font-weight:bold;text-decoration:underline">
+src/DL_number_plots_dir
+<br>src/DL_number_txt_dir
+</span>
+</span>
+
+但其實CMS HGCAL還是measuring energy，只是由root application 產生不同顏色所組成的圖形，跟一般的deep learning一樣，所以在用CNN training
+之前，我還是把electron和pion的number of energy 分別放入14x14的plot，而不是HGCAL產生的plot之後直接training，因為他們內在還是energy而不是
+實際上有的圖片，不然這樣會造成失真而無法sepearte兩種particles。接著要進入CNN的training，我定義:<span style="color:rgb(26,255,26)">input → hidden layer1(filter = 32, kernel_size=(3,3)) → hidden layer2(filter=64, kernel_size=(3,3)) → flatten(576) → Dense(512) → output(2) </span>，示意圖如下
+<br>
