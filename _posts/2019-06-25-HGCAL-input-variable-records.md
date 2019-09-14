@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Input Variable Records"
+permalink: "2019/06/25/HGCAL-input-variable-records.html"
 date: 2019-06-25
 tags:
     - "HGCAL"

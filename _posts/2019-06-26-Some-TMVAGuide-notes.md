@@ -2,6 +2,7 @@
 layout: post
 title: "Some TMVAGuide notes"
 date: 2019-06-26
+permalink: "2019/06/26/Some-TMVAGuide-notes.html"
 tags:
     - "HGCAL"
 ---

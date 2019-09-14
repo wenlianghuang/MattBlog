@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "What's Jekyll?"
-date: 2019-06-23
+title:  "What's Jekyll?"
+date:   2019-06-23
+permalink: "2019/06/23/whats-jekyll.html"
 tags:
     - "jekyll"
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "一些在CERN2018 執行檔用途"
+permalink: "2019/07/22/Note-which-Implement-CERN2018.html"
 tags:
     - "HGCAL"
 ---

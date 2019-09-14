@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2019-06-23 13:33:07 +0800
+permalink: "2019/06/23/welcome-to-jekyll.html"
 tags:
     - "jekyll"
 

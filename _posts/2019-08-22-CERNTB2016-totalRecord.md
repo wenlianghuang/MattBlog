@@ -6,7 +6,7 @@ tags:
     - "DiaryRecord"
 ---
 <br>
-<h1 style="color:#ff0000;font-weight:bold">先用中文把研究的過程和經驗寫下來，然後再用<a href="https://www.xm1math.net/texmaker/" style="font-style:italic">texmaker</a>用英文轉換成我最後的論文</h1>
+* <h1 style="color:#ff0000;font-weight:bold">先用中文把研究的過程和經驗寫下來，然後再用<a href="https://www.xm1math.net/texmaker/" style="font-style:italic">texmaker</a>用英文轉換成我最後的論文</h1>
 <br>
 
 從2018/09開始，我們已經知道在2016 CMS為了要準備蓋出新的加速器(L3)而先用試用<span style="color:rgb(255,210,0)">HGCAL 六角形</span>，

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "ML Comparing Records"
+permalink: "2019/07/16/Different-ML-Compare.html"
 date: 2019-07-16
 tags:
     - "HGCAL"

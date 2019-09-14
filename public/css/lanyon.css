@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: .5rem 1rem;
   border-top: 1px solid rgba(255,255,255,0.1);
 }
-.sidebar-nav-item.active,
+.sidebar-nav-item:active,
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: none;
@@ -431,6 +431,10 @@ a.dropbtn:hover/*, a.dropbtn:focus*/{
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
+  color: #268bd2;
+}
+.related h1,h2,h3,h4,h5{
+  color: #268bd2;
 }
 .related-posts {
   padding-left: 0;
@@ -443,12 +447,18 @@ a.dropbtn:hover/*, a.dropbtn:focus*/{
   font-size: 75%;
   color: #999;
 }
+.related-posts a{
+  color:#8f5536
+}
 .related-posts li a:hover {
   color: #268bd2;
   text-decoration: none;
+
 }
 .related-posts li a:hover small {
   color: inherit;
+  
+  
 }
 
 
@@ -655,4 +665,17 @@ a.pagination-item:hover {
 /* Only one tweak for a reverse layout */
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
+}
+
+/*20190912 Test for CSS div*/
+.ThemeinArticle {
+  color:red;
+}
+.ThemeinArticle a,
+.ThemeinArticle span{
+  color:#90a959;
+  text-decoration: none;
+}
+.ThemeinArticle a:hover{
+  background-color: gold;
 }
