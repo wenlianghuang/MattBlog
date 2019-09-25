@@ -4,6 +4,7 @@ title: "所有的CERNT2016報告紀錄事項"
 date: 2019-08-22
 tags:
     - "DiaryRecord"
+permalink: "2019/08/22/CERNTB2016-totalRecord.html"
 ---
 <br>
 * <h1 style="color:#ff0000;font-weight:bold">先用中文把研究的過程和經驗寫下來，然後再用<a href="https://www.xm1math.net/texmaker/" style="font-style:italic">texmaker</a>用英文轉換成我最後的論文</h1>

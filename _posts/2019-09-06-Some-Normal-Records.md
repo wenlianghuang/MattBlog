@@ -2,6 +2,9 @@
 layout: post
 title: "2019/09/06coding瑣事"
 date: "2019-09-06"
+tags:
+    - "DiaryRecord"
+permalink: "2019/09/06/Some-Normal-Records.html"
 ---
 
 <div class="ThemeinArticle">
