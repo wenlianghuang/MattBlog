@@ -8,7 +8,7 @@ permalink:
 ---
 
 <h3>
-    <a name="CMSSW10_6_0_pre4">Build New CMSSW 10 6 0</a>
+    <a name="CMSSW10_6_0_pre4">Build New CMSSW 10_6_0</a>
 </h3>
 <a href="https://twiki.cern.ch/twiki/bin/viewauth/CMS/HgcalSimulation#Explanation_about_the_xml_files" target="_blank">Related WebSite</a>
 
@@ -19,14 +19,16 @@ SLC = "Scientific Linux CERN"
 
 <h2><a href="https://github.com/cms-sw/cmssw"><span style="color:#ff0000">CMSSW github</span></a></h2>
 <h3>HGCalTBCERN170_ele_E100_cfg.py:</h3>
+    
     line 26: process.maxEvents = cms.untracked.PSet(
         input = cms.untracked.int32(10)
     )
+
     line 64: process.TFileService = cms.Service("TFileService",fileName = cms.string("TBGenSim.root"))
+    
     line 90: PartID = cms.vint(32) ---Electron
 
-    Question: <span style="color:#ff0000">If the number of events in one file is too many?</span>
-
+    Question: If the number of events in one file is too many?
 接下來我討論很多該如何寫自己的namespace of c/c++ 跟 makefile 的一些語法概念：
 <br>
 <a href="http://maxubuntu.blogspot.com/2010/02/makefile.html"><span style="color:#ff0000">makefile</span></a>
