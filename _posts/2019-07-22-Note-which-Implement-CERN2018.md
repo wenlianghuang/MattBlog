@@ -53,3 +53,6 @@ pwd:
 /home/wehuang/work2/new_workspace/CMSSW_10_2_6/root6_space/HGCAL_Testing_Deep_Learning/CERNTB2018/OrgML/ReaderPODir
 
 有兩種: Whole & Indiv，如果用Whole的話可以直接使用./ReaderPO，若用Indiv的話，請使用python script的PythonScriptReaderPO.py和shell script的ReaderPOShellScript.sh
+
+<h3><span style="color:#ff0000">Implement TMVAGui: root -l -e 'TMVA::TMVAGui("data root file","/path/to/tmva/output/directory")</span></h3>
+root file 通常是在TMVA_rootfile directory下
