@@ -48,7 +48,7 @@ Fig.1是我generate一個新的database
     <li>db.[table].* : any implementation in the specific table of its database</li>
     <li>db.[table].find():It 
 </ul>
-
+<br>
 <h2>pymongo</h2>
 用python 來執行mongo的database，我們稱為:<span style="color:#acff59;font-weight:bold">pymongo</span>，
 但如果想要用python來拉回的remote database，我們需要在pymongo MongoClient("mongodb+srv://<span style="color:#ff0000">帳號</span>:<span style="color:#ff0000">密碼</span>@<span style="color:#ff0000">網址</span>/<span style="color:#ff0000">預設資料庫</span>)，如果要support mongo+srv,需要 <code>python3 -m pip install pymongo[srv](在zsh裡是"pymongo[srv]")</code>
