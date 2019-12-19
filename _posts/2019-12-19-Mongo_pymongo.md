@@ -46,7 +46,7 @@ Fig.1是我generate一個新的database
     <li>show collections:show the table in database</li>
     <li>db.Dropdatabase(): delete database</li>
     <li>db.[table].* : any implementation in the specific table of its database</li>
-    <li>db.[table].find():It 
+    <li>db.[table].find():It </li>
 </ul>
 <br>
 <h2>pymongo</h2>
