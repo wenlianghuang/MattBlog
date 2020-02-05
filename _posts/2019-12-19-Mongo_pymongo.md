@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "20191219 Mongo and pymongo"
+title: "Mongo and pymongo"
 
 ---
 <h2>Overview</h2>
@@ -39,7 +39,7 @@ Fig.1是我generate一個新的database
 
 <span style="color:#ff0000">注意3</span>：盡量在mongo就產生database和table，其他的細節在可以留在pymongo
 
-以下有幾個可以在mongo下執行:
+以下有幾個可以在mongo下執行』
 <ul style="list-style-type:circle">
     <li>use "database name" : create database</li>
     <li>show dbs: List all databases.</li>
