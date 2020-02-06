@@ -11,5 +11,7 @@ tags: "HGCAL"
 2.Continuous energy CNN: 在一月中也和老師討論過，因為我們已經做新的continuous energy，並在non-preselection 和 preselection在Original machine learning 的差別，現在我就只要用CNN training來做比較，就像以前所做的方式，但我還沒完成，目前現在進行csv file 轉成 npz 的pion 和 electron，但有可能會memory segmentation的問題，希望晚上就可以出爐
 目前結論：有成功產生file:PionElectron100GeVContinResult.npz，但接下來卻出現"<span style="color:#ff0000">IOError: Failed to write to /tmp/wehuang/tmp26AydS-numpy.npy: 9601401600 requested and 9250707392 written</span>"這樣的問題，我會在睡覺前<span style="color:#ff0000">重新implement一次</span>，明天早上再看結果
 
-pion time: 3774s
-electron time: 9942s
+pion time: 3774s<br/>
+electron time: 9942s<br/>>
+
+20200206 0846：現在找出問題了，應該是有<span style="color:#ff0000">memory 不夠的問題</span>，而疑似解決的方式在<a href="https://github.com/numpy/numpy/issues/5336" target="_blank">這裡</a>，而暫時的解決方案是減少到900000的pion和900000來執行看看
