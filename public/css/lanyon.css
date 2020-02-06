@@ -47,8 +47,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  /*color: #313131;*/
-  color: #aa759f;
+  color: #313131;
   letter-spacing: -.025rem;
 }
 
@@ -435,7 +434,8 @@ a.dropbtn:hover/*, a.dropbtn:focus*/{
   color: #268bd2;
 }
 .related h1,h2,h3,h4,h5{
-  color: #268bd2;
+  /*color: #268bd2;*/
+  color: #aa759f;
 }
 .related-posts {
   padding-left: 0;
