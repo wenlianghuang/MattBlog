@@ -6,4 +6,5 @@ tags: "CSSRecord"
 ---
 
 <h2>HTML</h2>
-"<div role="明確指出他是什麼符號(ex:bottom,checkbox...)">"
+"<div role="明確指出他是什麼符號(ex:buttom,checkbox...)">"，role其實沒有真正的用途，只是說明這個符號要幹嘛?<br/>
+site.cover<br/>
