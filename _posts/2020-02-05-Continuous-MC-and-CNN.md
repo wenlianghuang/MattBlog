@@ -48,8 +48,8 @@ electron time: 9942s<br/>
     <li>7.1 100GeV Data</li>
     <ul>
         <li>7.1.1 100GeV Pion event number: <span style="color:#ff0000">162817</span></li>
-        <li>7.1.2 100GeV Electron evnt number: <span style="color:#ff0000">306828</span></li>
-        <span>7.1.3. Accuracy: <span style="color:#ff0000">0.566</span>
+        <li>7.1.2 100GeV Electron evnt number: <span> style="color:#ff0000">306828</span></li>
+        <li>7.1.3. Accuracy: <span style="color:#ff0000">0.566</span></li>
     </ul>
     <li>7.2 20GeV Data</li>
     <ul>
