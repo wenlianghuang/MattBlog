@@ -2,7 +2,9 @@
 layout: post
 title: HTML,CSS,JS some record
 date: "2020-02-09"
-tags: "CSSRecord"
+tags: 
+    - "CSSRecord"
+permalink: 2020/02/08/HTML-CSS-JS-some-record.html
 ---
 
 <h2>HTML</h2>

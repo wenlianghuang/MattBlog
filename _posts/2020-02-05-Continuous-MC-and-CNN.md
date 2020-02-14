@@ -2,7 +2,9 @@
 layout: post
 title: "Continuous MC and CNN"
 date: "2020-02-05"
-tags: "HGCAL"
+tags: 
+    - "HGCAL"
+permalink: "2020/02/05/Continuous-MC-and-CNN.html"
 ---
 <h2>Overview</h2>
 因為接下來我要去參加活動，所以先快速列下這幾天我嘗試做的事情
@@ -31,5 +33,9 @@ electron time: 9942s<br/>
     <li>6.2: 稍微增加pBeam的valu,從70~100GeV 增加到60~130GeV</li>
 </ul>
 <br/>
-我先用6.2來做training，結果的確accuracy也下降了，但還是希望幾天我利用lxplus的crab產生更多的MC(預計2 million events)，這樣可以增加保險
-7.
+我先用6.2來做training，結果的確accuracy也下降了，但還是希望幾天我利用lxplus的crab產生更多的MC(預計2 million events)，這樣可以增加保險<br/>
+7.把data放進MC CNN的model再train一次並看結果:
+<ul>
+    <li>7.1 100GeV Pion event number: <span style="color:#ff0000">162817</span></li>
+    <li>7.2 100GeV Electron evnt number: <span style="color:#ff0000"></span></li>
+</ul>
