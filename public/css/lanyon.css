@@ -379,8 +379,8 @@ a.dropbtn:hover/*, a.dropbtn:focus*/{
 
 .page-header {
     color: #fff;
-    /*background: url('https://user-images.githubusercontent.com/13759047/60906244-4a3a0580-a2a9-11e9-84e7-574fe38d1fb8.jpg') no-repeat 50%;*/
-    background: url('https://user-images.githubusercontent.com/13759047/74457133-cee5a580-4ec2-11ea-8f9c-985dc17cc842.jpg') no-repeat 50%;
+    background: url('https://user-images.githubusercontent.com/13759047/60906244-4a3a0580-a2a9-11e9-84e7-574fe38d1fb8.jpg') no-repeat 50%;
+    /*background: url('https://user-images.githubusercontent.com/13759047/74457133-cee5a580-4ec2-11ea-8f9c-985dc17cc842.jpg') no-repeat 50%;*/
     width: 100%;
     /*height: 100%;*/
     position: fixed;
@@ -426,6 +426,11 @@ a.dropbtn:hover/*, a.dropbtn:focus*/{
     text-align: left;
 }
 
+.subheader-linkwebsite,
+.subheader-linkwebsite a{
+    color: #6a9fb5;
+    text-align: left;
+}
 
 
 /* Related posts */
