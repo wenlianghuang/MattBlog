@@ -26,6 +26,7 @@ url: 'https://wenlianghuang.github.io' # the base hostname & protocol for your s
 twitter_username: jekyllrb
 github_username: MattBlog
 disquis_shortname: jaycetyle
+officialwebsitename: jekyllwb
 # Build settings
 markdown: kramdown
 theme: minima
