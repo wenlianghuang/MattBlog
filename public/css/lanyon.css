@@ -116,6 +116,9 @@ h1, h2, h3, h4, h5, h6 {
 .masthead-title a {
   color: #505050;
 }
+.masthead-title code{
+  color: #550055;
+}
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
@@ -382,7 +385,7 @@ a.dropbtn:hover/*, a.dropbtn:focus*/{
     background: url('https://user-images.githubusercontent.com/13759047/60906244-4a3a0580-a2a9-11e9-84e7-574fe38d1fb8.jpg') no-repeat 50%;
     /*background: url('https://user-images.githubusercontent.com/13759047/74457133-cee5a580-4ec2-11ea-8f9c-985dc17cc842.jpg') no-repeat 50%;*/
     width: 100%;
-    /*height: 100%;*/
+    height: 20%;
     position: fixed;
     top: 0;
     left: 0;
@@ -687,3 +690,73 @@ a.pagination-item:hover {
 .ThemeinArticle a:hover{
   background-color: gold;
 }
+
+/*20200301 Test for row image*/
+.bob-container{
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bob-row{
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.bob-row:before,.bob-row:after{
+  display: table;
+  content: " ";  
+}
+
+.bob-row:after{
+  clear: both;
+}
+
+/*2個並排 不管在任何尺寸都會2個並排*/
+.bob-2item{
+  width:50%;
+}
+
+/*3個並排 在767px以下會垂直排列*/
+.bob-3item{
+  width: 100%;
+}
+/*4個並排 在767px以下會2個排列*/
+.bob-4item{
+  width:50%;
+}
+
+.bob-2item,.bob-3item,.bob-4item{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  float:left;
+}
+
+.bob-2item img,.bob-3item img,.bob-4item img{
+  width:100%;
+  display: block;
+}
+@media (min-width: 768px) {
+  .bob-container {
+    width: 750px;
+  }
+  .bob-3item{
+    width: 33.33333333%;
+  }
+  .bob-4item{
+    width:25%;
+  }
+}
+@media (min-width: 992px) {
+  .bob-container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .bob-container {
+    width: 1170px;
+  }
+}
+

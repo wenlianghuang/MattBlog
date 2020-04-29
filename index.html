@@ -27,7 +27,7 @@ title: Home
     {% if paginator.page == 2 %}
       <a href="{{ site.baseurl }}/" class="previous"> ← Previous 1 ||</a>
     {% else %}
-      <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}/" class="previous"> Previous ||</a>
+      <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}/" class="previous"> ← Previous ||</a>
     {% endif %}
   {% else %}
     <span class="previous"> Previous </span>
