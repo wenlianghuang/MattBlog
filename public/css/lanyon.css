@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem;
 }
 .sidebar-item p:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0.;
 }
 
 /* Sidebar nav */
@@ -760,3 +760,26 @@ a.pagination-item:hover {
   }
 }
 
+/*Everything in Theory Diary*/
+.TheoryPhysics,
+.TheoryPhysics a:target
+{
+  color:#ff9933;
+}
+
+.TheoryLatex,
+.TheoryLatex a:target
+{
+  color:#33ff33;
+}
+
+.TheoryOther, 
+.TheoryOther a
+{
+  color:#f4bf75;
+}
+
+.posts-date 
+{
+  color:blue;
+}
