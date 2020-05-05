@@ -774,9 +774,16 @@ a.pagination-item:hover {
 }
 
 .TheoryOther, 
-.TheoryOther a
+.TheoryOther a,
+.TheoryOther h3
 {
   color:#f4bf75;
+}
+
+.TheoryOther img
+{
+  width:400px;
+  height:400px;
 }
 
 .posts-date 
