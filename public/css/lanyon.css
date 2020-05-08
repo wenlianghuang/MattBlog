@@ -787,7 +787,7 @@ a.pagination-item:hover {
   height:400px;
   display: table;
   clear: both;
-  
+  content: "";
 }
 .TheoryColumn img{
   float: left;
