@@ -773,19 +773,27 @@ a.pagination-item:hover {
   color:#33ff33;
 }
 
-.TheoryOther, 
+
+.TheoryOther , 
 .TheoryOther a,
 .TheoryOther h3
 {
   color:#f4bf75;
 }
 
-.TheoryOther img
+.TheoryOther::after img
 {
   width:400px;
   height:400px;
+  display: table;
+  clear: both;
+  
 }
-
+.TheoryColumn img{
+  float: left;
+  width: 50%;
+  padding:5px;
+}
 .posts-date 
 {
   color:blue;
