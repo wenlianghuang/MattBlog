@@ -2,7 +2,15 @@
 layout: default
 title: Home
 ---
-
+<!--
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+-->
 <div class="posts">
     {% for post in paginator.posts %}
     <div class="post">
@@ -21,16 +29,47 @@ title: Home
     {% endfor %}
 </div>
 
+<!-- Boostrap 4 with Pagination-->
+<div class="container">
+  <div class="pagination">
+    {% if paginator.previous_page%}
+      <li class="page-item"><a class="page-link" href="{{site.baseurl }}/">First</a></li>
+      {% if paginator.page == 2%}
+        <li class="page-item"><a class="page-link" href="{{site.baseurl}}/">1</a></li>
+        <li class="page-item active"><a class="page-link" href="{{site.baseurl}}/page{{paginator.page}}">2</a></li>
+        <li class="page-item"><a class="page-link" href="{{site.baseurl}}/page{{paginator.next_page}}">{{paginator.next_page}}</a></li>
+        <li class="page-item"><a class="page-link" href="#">...</a></li>
+        <li class="page-item"><a class="page-link" href="{{site.baseurl}}/page{{paginator.total_pages}}">Last</a></li>
+      {% elsif paginator.page == paginator.total_pages %}
+        <li class="page-item"><a class="page-link" href="#">...</a></li>
+        <li class="page-item"><a class="page-link" href="{{site.baseurl}}/page{{paginator.previous_page}}">{{paginator.previous_page}}</a></li>
+        <li class="page-item active"><a class="page-link" href="{{site.baseurl}}/page{{paginator.page}}">{{paginator.page}}</a></li>
+      {% else %}
+        <li class="page-item"><a class="page-link" href="{{site.baseurl}}/page{{paginator.previous_page}}">{{paginator.previous_page}}</a></li>
+        <li class="page-item active"><a class="page-link" href="{{site.baseurl}}/page{{paginator.page}}">{{paginator.page}}</a></li>
+        <li class="page-item"><a class="page-link" href="{{site.baseurl}}/page{{paginator.next_page}}">{{paginator.next_page}}</a></li>
+        <li class="page-item"><a class="page-link" href="#">...</a></li>
+        <li class="page-item"><a class="page-link" href="{{site.baseurl}}/page{{paginator.total_pages}}">Last</a></li>  
+      {%endif%}
+      {% else %}
+        <li class="page-item active"><a class="page-link" href="{{site.baseurl}}/">1</a></li>
+        <li class="page-item"><a class="page-link" href="{{site.baseurl}}/page2">2</a></li>
+        <li class="page-item"><a class="page-link" href="{{site.baseurl}}/page3">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">...</a></li>
+        <li class="page-item"><a class="page-link" href="{{site.baseurl}}/page{{paginator.total_pages}}">Last</a></li>
+    {%endif%}
+  </div>
+</div>
 
+<!--
 <div class="pagination">
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
       <a href="{{ site.baseurl }}/" class="previous"> ← Previous 1 ||</a>
     {% else %}
-      <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}/" class="previous"> ← Previous ||</a>
+      <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}/" class="previous"> ← Previous {{paginator.previous_page }}||</a>
     {% endif %}
-  {% else %}
-    <span class="previous"> Previous </span>
+  
   {% endif %}
 
   <span class="page_number">Page: {{ paginator.page }} of <a href="{{ site.baseurl }}/page{{ paginator.total_pages }}/" class="total">{{ paginator.total_pages }}</a> </span>
@@ -41,3 +80,4 @@ title: Home
     <span class="next">|| Next</span>
   {% endif %}
 </div>
+-->

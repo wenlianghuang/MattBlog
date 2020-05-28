@@ -798,3 +798,11 @@ a.pagination-item:hover {
 {
   color:blue;
 }
+
+.header-position
+{
+  position: relative;
+  bottom:35px;
+  left:20px;
+
+}
